@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy</title>
+<style>
+  :root { --bg: #0f1420; --fg: #e9edf5; --muted: #a8b3c7; --accent: #ffb43f; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, "Apple SD Gothic Neo", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 26px; } h2 { font-size: 18px; margin-top: 28px; color: var(--accent); }
+  a { color: var(--accent); } .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy — Electric Insider Uploader</h1>
+  <p class="muted">Last updated: October 10, 2026</p>
+
+  <p>Electric Insider Uploader ("the tool") is a private command-line tool used only by the owner of the YouTube channel
+  <a href="https://www.youtube.com/channel/UCQiXuCq6RZvLNPYhRb1R0Qw">전기의 속사정</a> to upload that channel's own videos.
+  The tool uses YouTube API Services. By using the tool you agree to the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Data accessed</h2>
+  <p>With the channel owner's consent (Google OAuth, scopes <code>youtube.upload</code> and <code>youtube.readonly</code>), the tool accesses:
+  the authenticated channel's ID (to confirm the correct channel), and the ability to upload videos and thumbnails to that channel.
+  It does not access any other YouTube user's data.</p>
+
+  <h2>How data is used</h2>
+  <p>The channel ID is compared with the owner's channel before each upload. Video files, titles, descriptions, tags and thumbnails
+  are created by the owner and sent to YouTube only to publish them on the owner's channel.</p>
+
+  <h2>Storage and sharing</h2>
+  <p>The OAuth refresh token is stored only in the macOS Keychain on the owner's computer. No API data is stored on any server,
+  sold, or shared with third parties. The tool does not use cookies, analytics, or advertising.</p>
+
+  <h2>Revoking access</h2>
+  <p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">Google Account → Third-party connections</a>,
+  which immediately stops the tool from using the API. Deleting the Keychain item removes the stored token from the computer.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:create.seok@gmail.com">create.seok@gmail.com</a></p>
+</main>
+</body>
+</html>

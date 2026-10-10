@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Electric Insider Uploader</title>
+<style>
+  :root { --bg: #0f1420; --fg: #e9edf5; --muted: #a8b3c7; --accent: #ffb43f; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, "Apple SD Gothic Neo", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px; }
+  h1 { margin: 0 0 4px; font-size: 28px; }
+  .sub { color: var(--muted); margin: 0 0 32px; }
+  h2 { font-size: 18px; margin-top: 32px; color: var(--accent); }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #2a3245; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Electric Insider Uploader</h1>
+  <p class="sub">전기의 속사정 업로더 — a private publishing tool for one YouTube channel</p>
+
+  <h2>What it is</h2>
+  <p>This is an internal command-line tool run by the owner of the YouTube channel
+  <a href="https://www.youtube.com/channel/UCQiXuCq6RZvLNPYhRb1R0Qw">전기의 속사정 (Electric Insider)</a>,
+  an educational channel that explains the engineering behind everyday electrical and electronic devices.
+  It is not a public service: there are no other users, no sign-up, and no website features beyond this page.</p>
+
+  <h2>How it uses YouTube API Services</h2>
+  <ul>
+    <li>The channel owner signs in once with Google OAuth and grants the <code>youtube.upload</code> and <code>youtube.readonly</code> scopes.</li>
+    <li><code>channels.list</code> (mine=true) confirms the token belongs to the owner's channel before every upload.</li>
+    <li><code>videos.insert</code> uploads a finished video produced by the owner and schedules its publication time.</li>
+    <li><code>thumbnails.set</code> sets the custom thumbnail for that video.</li>
+  </ul>
+  <p>The tool only acts on the owner's own channel. It does not read, store, or analyze any other user's data.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>
